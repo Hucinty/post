@@ -1,0 +1,79 @@
+<script type="importmap">
+  {
+    "imports": {
+      "@google/genai": "https://esm.sh/@google/genai@^0.7.0",
+      "marked": "https://esm.sh/marked@^15.0.7"
+    }
+  }
+</script>
+<script type="module" crossorigin src="/post/assets/index-DubzAiTq.js"></script>
+<link rel="stylesheet" crossorigin href="/post/assets/index-BlwH2z7j.css">
+
+<div class="app-container theme-cats">
+  <div class="left-panel">
+    <h1>STORYMAKER.APP</h1>
+    <div class="menu-section">
+      <p class="menu-heading">/THEMES</p>
+      <ul id="theme-selector" class="menu-list">
+        <li data-value="cats" class="selected">[ * ] 🐈 TINY CATS</li>
+        <li data-value="robots">[   ] 🤖 HAPPY ROBOTS</li>
+        <li data-value="trees">[   ] 🌳 WISE TREES</li>
+        <li data-value="gnomes">[   ] 🍄 BUSY GNOMES</li>
+        <li data-value="doodles">[   ] ✏️ DOODLES</li>
+        <li data-value="humans">[   ] 🧑‍🤝‍🧑 JUST HUMANS</li>
+        <li data-value="element">[   ] ✨ ELEMENTAL FORCES</li>
+      </ul>
+    </div>
+    <div class="menu-section">
+      <p class="menu-heading">/EXAMPLES</p>
+      <ul id="examples" class="menu-list example-list">
+        <li>Explain how neural networks work.</li>
+        <li>Explain how The Matrix works.</li>
+        <li>Explain how spaghettification works.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="center-panel">
+    <div class="controls">
+      <div class="control-group">
+        <p class="control-heading">-- Aspect Ratio --</p>
+        <ul id="ratio-selector" class="menu-list">
+          <li data-value="1-1" class="selected">[ * ] 1:1 (SQUARE)</li>
+          <li data-value="9-16">[   ] 9:16 (PORTRAIT)</li>
+          <li data-value="16-9">[   ] 16:9 (LANDSCAPE)</li>
+        </ul>
+      </div>
+      <div class="control-group">
+        <p class="control-heading">-- Illustration Style --</p>
+        <ul id="color-selector" class="menu-list">
+          <li data-value="bw" class="selected">[ * ] BLACK & WHITE</li>
+          <li data-value="muted">[   ] MUTED TONES</li>
+          <li data-value="vibrant">[   ] VIBRANT COLORS</li>
+          <li data-value="pastel">[   ] PASTEL HUES</li>
+          <li data-value="duotone">[   ] DUOTONE</li>
+        </ul>
+      </div>
+      <div class="control-group">
+        <p class="control-heading">-- Prompt --</p>
+        <textarea id="input" placeholder="e.g. Explain how photosynthesis works..."></textarea>
+      </div>
+       <button id="generate-btn">GENERATE CANVAS</button>
+    </div>
+  </div>
+
+  <div class="right-panel">
+    <div id="output-container">
+      <div id="output"></div>
+      <div id="error" hidden></div>
+      <div id="slideshow" hidden></div>
+      <div id="actions-container" hidden>
+        <button id="download-btn">DOWNLOAD IMAGES</button>
+        <button id="copy-text-btn">COPY ALL TEXT</button>
+        <button id="share-btn">SHARE STORY</button>
+        <button id="reel-btn">DOWNLOAD REEL</button>
+        <button id="reel-share-btn">SHARE REEL</button>
+      </div>
+    </div>
+  </div>
+</div>
